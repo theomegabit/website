@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">    
+    <title>Review: Ubiquiti Unifi</title> 
+    <meta name="description" content="Tech, dev, security, and photography.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="canonical" href="http://theomegabit.io/2017/08/25/ubiquiti-unifi/">
+    <link rel="alternate" type="application/rss+xml" title="theOmegabit Feed" href="http://theomegabit.io/feed.xml">
+</head>
+<body>
+    <nav id="top" class="site-navigation">
+        <div class="inner">
+            <button id="menu-toggle" aria-expanded="false">Menu</button>
+            <div class="nav-menu">
+                <ul class="menu">
+                
+                  
+                  
+                  <li class="">
+                    <a class="" href="/">Home</a>
+                  </li>
+                
+                  
+                  
+                  <li class="">
+                    <a class="" href="/about/">About</a>
+                  </li>
+                
+                  
+                  
+                  <li class="">
+                    <a class="" href="/coming-soon/">Coming Soon</a>
+                  </li>
+                
+                  
+                  
+                  <li class="">
+                    <a class="" href="/tags/">Archives</a>
+                  </li>
+                
+                </ul>        
+            </div><!-- .nav-menu -->
+            <a class="subscribe-button fa-feed square fill-horizontal" href="/feed.xml"><span class="screen-reader-text">Subscribe</span></a>
+        </div><!-- .inner -->
+    </nav><!-- .site-navigation -->
+    <header class="site-header">
+        <div class="inner">
+            <h1 class="site-title"><a class="logo-text" href="/">theOmegabit</a></h1>
+            <p class="site-description">Bits and Bytes</p>
+        </div><!-- .inner -->
+    </header>
+    <div class="site-content">
+    <div class="inner">
+        <main class="site-main">
+            <article class="post">
+                <header class="entry-header"> 
+                    <div class="entry-header-wrap">
+                        
+                        <div class="post-thumbnail">
+                            <img src="/images/posts/ubiquiti1.png" alt="Review: Ubiquiti Unifi">
+                        </div><!-- .post-thumbnail -->
+                        
+                        <h1 class="entry-title">Review: Ubiquiti Unifi</h1>
+                    </div><!-- .entry-header-wrap -->
+                    <div class="entry-meta">
+                        by <span class="post-author">Mike Norris</span> on <time class="published" datetime="2017-08-25">August 25, 2017</time>
+                    </div><!-- .entry-meta -->
+                </header><!-- .entry-header -->
+                <div class="entry-content">
+                    <p>There are a multitude of wireless routers, hubs, and switches aimed at the consumer market. And while the higher end may have enough features to please even more picky power users and “techies”, there’s something to be said about choices, particularly prosumer choices. One such company that falls under that category is Ubiquiti. They’ve been around for awhile to be fair. But, over time they’re continued to build upon the previous generation’s successes and keep moving forward. The team over at Ubiquiti was nice enough to send over a nice assortment of goodies including their Gateway/firewall, 8 port switch, Cloud Controller key, and an AC Pro access point.</p>
+
+<p>We’ve been using the gear for the last ~6 weeks and have a fairly good assortment of thoughts. And there are a lot of them…</p>
+
+<!--more-->
+
+<h2>Software</h2>
+
+<p>Hardware is still important in 2016. But more often than not, hardware lifespans can be extended with good hardware. Not to mention, poor software can shorten hardware’s lifespans. In the case of Ubiquiti, they make some pretty nice software both in terms of functionality and features as well as UI. In fact, the UI is one of my favorite aspects of it. The way it lays out data from end to end is nice, clean and generally simple without being dumbed down. That said, to make the most of the software and monitoring, you really need Ubiquiti device at every step of the way. Without a link in the chain, while nice, it just isn’t as full featured and “pretty” to look at.</p>
+
+<p>Setting up the Ubiquiti hardware devices and cloud controller for the first time can be a bit frustrating. And this is perhaps the greatest hurdle Ubiquiti would have to address if they wanted to push down into more “normal” consumer spaces. Specifically, I already had a single AC Pro setup with the cloud controller software setup on a mac mini on my network. In the process of setting up the environment with the hardware based cloud controller key from Ubiquiti, I had an incredibly tough time getting the original AP I had to disassociate with the original controller. In theory it’s not supposed to be hard at all. But in my experience it just wouldn’t let the past go. I eventually got so frustrated with it I walked away and came back a few hours later and voila… it was ready to join the new cloud controller.</p>
+
+<figure class="full-width caption">
+    <img src="/images/posts/unifidashboard.jpg" alt="Unifi Dashboard" />
+    
+    <figcaption class="caption-text">Unifi Dashboard</figcaption>
+    
+</figure>
+
+<p>Once that slight aggravation was settled things got a lot easier and what one would expect. While items within the various pages and menus aren’t the most detailed out there, they’re good enough for the prosumer space in my opinion. Along the same lines, it can be a bit confusing at first to have to jump between selecting each hardware device to see configuration settings for each piece of hardware as they aren’t configurable globally in a single place. Meanwhile, other settings <em>can</em> be configured in a more global menu. Needless to say, while it’s certainly easier than setting up some Cisco gear via command line, it’s not quite to the level of your typical router you’d buy at Best Buy. Really, I’d say it’s on par with Meraki in terms of layout with some minor differences between the two in what is placed where.</p>
+
+<p>Cons aside, the software will do a ton. Everything from mutli-VLANing your networks to point-to-point VPNs (which is rather easy to setup) makes the Ubiquiti environment incredibly versatile and something that nerds will enjoy tinkering with. And of course, my favorite part is the interface that will detail a lot of different metrics about what is currently going on within your network including everything between connected devices to bandwidth. For chart junkies the Ubiquiti ecosystem’s interface is something worth exploring.</p>
+
+<p>All that said, one area I wish Ubiquiti would improve on is the cloud management. For starters, the reliance on local software running on a computer or the dedicated hardware “key” seems like a weird crutch. I’d like to see it moved all to the cloud like Meraki’s solution. It’s simply one less complication to deal with.</p>
+
+<p>Overall, I’d rate the software more than acceptable. While it can take a bit of learning and getting used to (especially if you’re moving from consumer to prosumer),  it is slightly more approachable than Cisco/Meraki on both price and learning curve standpoints. And to recap, I like charts… and colors. And when you have end-to-end components that all talk nicely together, it makes for a pretty great experience.</p>
+
+<h2>AC Pro</h2>
+<figure class="full-width caption">
+    <img src="/images/posts/unifi-acpro.jpg" alt="Unifi AC Pro" />
+    
+    <figcaption class="caption-text">Unifi AC Pro</figcaption>
+    
+</figure>
+
+<p>Specs:</p>
+
+<ul>
+  <li>3 x Dual-band antennas, 2.4 GHz: 3 dBi, 5 GHz: 6 dBi</li>
+  <li>802.11a/b/g/n/ac w/ band steering</li>
+  <li>weather resistant</li>
+  <li>Passive Power over Ethernet (48 V), 802.3af/803.2at Supported</li>
+  <li>(Supported Voltage Range: 44 to 57 VDC)</li>
+  <li>Max power consumption: 9 W</li>
+  <li>Supported speeds:
+    <ul>
+      <li>802.11a</li>
+      <li>6, 9, 12, 18, 24, 36, 48, 54 Mb/s802.11n</li>
+      <li>6.5 to 450 Mb/s (MCS0 – MCS23, HT 20/40)802.11ac</li>
+      <li>6.5 to 1300 Mb/s (MCS0 – MCS9 NSS1/2/3, VHT 20/40/80)802.11b</li>
+      <li>1, 2, 5.5, 11 Mb/s802.11g</li>
+      <li>6, 9, 12, 18, 24, 36, 48, 54 Mb/s</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The AC Pros are perhaps one of the nicest looking yet simple APs we’ve come across. The white disk with center glowing circle seems very Apple-like in simplicity. The glowing circle pulls double duty, too, as an indicator of the APs status between no connected clients, connected clients, errors/issues, etc.</p>
+
+<p>On the underside are just a few ports – a power port, an ethernet port and a secondary ethernet port to daisy chain APs together. Being that the AC Pros support standard PoE (power over ethernet) — and not that 24v passive junk which is annoying — you’re best option to reduce clutter and unnecessary wires is make sure you have a switch that also supports PoE. The 8 port switch by Ubiquiti just happens to have said support, though any PoE switch will work. You can sit the AC Pro flat as well as mount it on a wall or ceiling with the provided mount.</p>
+
+<p>One other nice perk: the AC Pros are weather resistant enough that you can legit mount them outside without any special covering or case. So, for those of you looking to extend your network to a detached building or simply cover the backyard in modern wireless goodness, the barrier to doing that is much lower. All you need is some Cat 5 cable run to the location of the AP and said AP. The software will then step in and give you an easy way to add and extend to your network.</p>
+
+<p>Over the last few months I’ve had a solid experience. There has been a single instance in which the AP needed a reboot but other than that, coverage has been great, speeds high, and the experience very much “set it and forget it” after the initial grief. I will admit I was skeptical at first regarding range with the AC Pro vs. some of the other routers I have which feature much larger, external antennas. Generally speaking, the larger the antenna the better range you’ll get. Now, I’m not a hardware engineer so I’m not going to pretend I know exactly how or why something with smaller internal antennas on this prosumer device can match (and at times exceed) the ranage of something, say, <a href="https://www.engadget.com/2015/01/05/d-link-wifi-routers-powerline/">like this</a>. Just know that the AC Pro can. It needs to be said though, wireless is a fickle thing and your experience could (and very likely will) vary.</p>
+
+<h2>Unifi AC Mesh</h2>
+
+<figure class="alignright caption">
+    <img src="/images/posts/unifimesh.jpg" alt="Unifi AC Mesh points" />
+    
+    <figcaption class="caption-text">Unifi AC Mesh points</figcaption>
+    
+</figure>
+
+<p>Truth be told, these mesh points from Ubiquiti are actually much newer than the other gear in the review here. But over time as I’ve continued using the Unifi gear, it’s been a welcome addition to further bolster network coverage and versatility with the two additional mesh points.</p>
+
+<p>The way the work is much like any other repeater. The dual-band AC units can be both wired and wireless added to your network.</p>
+
+<p>Even in wireless mode, I didn’t see any noticeable differences in speed or performance when several devices were connected to both the mesh point and the downstream wireless uplink AP. In a real world, high speed test however, the performance degradation when multiple hops are involved cannot be forgotten or discounted. In the scope of a normal sized house, it’s not something you’ll likely have to worry about.</p>
+
+<h2>Switch &amp; Firewall/Gateway</h2>
+
+<p>Switch hardware these days is honestly kind of boring. It’s the software features that make the HW intriguing and differentiate one device from the next. As we touched on earlier, Ubiquiti’s software is quite nice to look at and only gets better the more Ubiquiti devices you have running together. And that is the big kicker here – to truly get the best experience you really need to have as much Ubiquiti hardware as possible.</p>
+
+<p>With the switch and gateway one is able to literally control just about anything, and all via a wonderful GUI that brings networking into the modern world so you can get in, do what you need, and get out.</p>
+
+<p>Spec wise the switch and gateway are what you would expect – multiple 1 gig ports all providing standard PoE for any other PoE devices you might want to plug into it.</p>
+
+<ul>
+  <li>(8) Gigabit RJ45 Ports</li>
+  <li>(2) SFP Ports</li>
+  <li>Non-Blocking Throughput: 10 Gbps</li>
+  <li>Switching Capacity: 20 Gbps</li>
+  <li>Forwarding Rate: 14.88 Mpps</li>
+  <li>Maximum Power Consumption: 150W</li>
+  <li>Supports POE+ IEEE 802.3at/af and 24V Passive PoE</li>
+  <li>Quiet, Fanless Operation</li>
+  <li>Rackmountable with Rack-Mount Brackets (Included)</li>
+  <li>Desktop-Mountable(DonotphysicallystacktheUS-8-150W.)</li>
+</ul>
+
+<p>Much the same as the switch, the gateway is a great addition to any network as it is a more business-y security gateway. That is, it actively works toward protecting your network to intrusions from the outside. Some of the more notable specs include:</p>
+
+<ul>
+  <li>(3) 10/100/1000 RJ45 Ports*</li>
+  <li>(1) RJ45 Serial Console Port</li>
+  <li>Quiet, Fanless Operation</li>
+  <li>Wall?Mounting Capability</li>
+  <li>Layer 3 Forwarding Performance</li>
+</ul>
+
+<h2>Heat</h2>
+
+<p>While most of the discussion’s we’ve had with others regarding Ubiquiti hardware has been almost unanimously positive we have had people chat with us regarding component quality. While I can’t speak for the quality of the components (outside my expertise) I will say that I never had any issues with the units Ubiquiti sent. To be fair, ~4 months isn’t a great length in the true “long term review” spectrum. Nonetheless, the ambient temperature in the building I have been in was quite warm (~80-87) during the middle of summer. Yes, the Ubiquiti hardware has been running hot, maybe even “wow, that’s hot for a gadget” (specifically, the gateway got the hottest). But they haven’t so much as blinked in the higher operating temps they’ve been subjected to. And for that I can at least say I’m appreciative. Perhaps in 12 months we’ll see how things are still fairing. Maybe they’ll throw up a white flag in 18 months. For now, though, all I can say is that I have not had any issues with them. I’m pleased with how the hardware has performed.</p>
+
+<h2>Wrap-up</h2>
+<figure class="alignright caption">
+    <img src="/images/posts/ubiquiticlose.png" alt="Unifi" />
+    
+    <figcaption class="caption-text">Unifi</figcaption>
+    
+</figure>
+<p>The vast majority of people are going to spring for something cheap from Best Buy. And that’s fine. Most people don’t want or need the features that Ubiquiti or any other pro-sumer/business level hardware and software provides. But for those who do, Ubiquiti is a great option to consider compared to one of the other big names in this space – Meraki (by Cisco). While Meraki is a more fleshed out and truly enterprise level product, it also 1) costs more and 2) can be more involved, especially if you delve into the more traditional Cisco namespace.</p>
+
+<p>I would say most anyone considering this setup almost certainly can figure out some of the software gripes I had early on. It was annoying but not a show stopper. That said, it also highlighted another area that Cisco (and frankly, many other consumer level hardware) has an advantage over – community and support. The community around Ubiquiti is very vocal and loyal, but it’s also small. There’s no way around it – the community is simply small, which makes finding answers to questions a little more involved and time consuming. Add to that the lack of deeper documentation into the hardware/software and you have the recipe for a headache when problems pop up, especially if you’re not the type of person who is ok with rolling up their sleeves and getting their hands dirty.</p>
+
+<p>Initial setup and HW quality concerns aside, my time with the various pieces of hardware has been largely non-eventful. And really, that’s what you want. Set it and forget it. When you need to change something, get in, change it and get out while also being able to get a good look at your network when you want to dig deeper thanks to the great reporting and charting of various metrics.</p>
+
+<p>If you’re looking to get into the pro-sumer space for your home or even small business, Ubiquiti is worth a look. The lower cost of entry to other options means it’s approachable and a much lower risk if it ends up not being a right fit down the road.</p>
+
+<div align="center">A big thank you to Ubiquiti who was kind enough to send all this gear over.</div>
+
+                </div><!-- .entry-content -->
+                <footer class="entry-footer">
+                    <div class="share-post">
+                        <span>Share</span>
+                        <a class="fa-twitter" target="_blank" href="https://twitter.com/intent/tweet?text=Review:%20Ubiquiti%20Unifi&amp;url=http://theomegabit.io/2017/08/25/ubiquiti-unifi/"><span class="screen-reader-text">Twitter</span></a>
+                        <a class="fa-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://theomegabit.io/2017/08/25/ubiquiti-unifi/&amp;t=Review:%20Ubiquiti%20Unifi"><span class="screen-reader-text">Facebook</span></a>
+                        <a class="fa-google-plus" target="_blank" href="http://plus.google.com/share?url=http://theomegabit.io/2017/08/25/ubiquiti-unifi/"><span class="screen-reader-text">Google+</span></a>
+                    </div><!-- .share-post -->
+                    
+                    <div class="tag-links">
+                        Tags: <a href="/tags/index.html#review" title="Pages tagged review" rel="tag">review</a><a href="/tags/index.html#wireless" title="Pages tagged wireless" rel="tag">wireless</a><a href="/tags/index.html#networking" title="Pages tagged networking" rel="tag">networking</a><a href="/tags/index.html#ubiquiti" title="Pages tagged ubiquiti" rel="tag">ubiquiti</a><a href="/tags/index.html#unfi" title="Pages tagged unfi" rel="tag">unfi</a><a href="/tags/index.html#accesspoint" title="Pages tagged accesspoint" rel="tag">accesspoint</a><a href="/tags/index.html#wifi" title="Pages tagged wifi" rel="tag">wifi</a>
+                    </div>
+                    
+                </footer><!-- .entry-footer -->
+            </article><!-- .post -->
+            <div class="author-box">
+                <div class="author-info">
+                    <div class="author-avatar" style="background-image: url(/images/authorimage.png)"><span class="screen-reader-text">Mike Norris's Picture</span></div>
+                    <div class="author-details">
+                        <h2 class="author-title">About Mike Norris</h2>
+                        <p class="author-bio">Professional cyber</p>
+                        <span class="author-location"><i class="fa-map-marker" aria-hidden="true"></i> U.S.</span>
+                        <span class="author-website"><i class="fa-chain" aria-hidden="true"></i> <a href="https://theomegabit.io" target="_blank"> https://theomegabit.io</a></span>
+                    </div><!-- .author-details -->
+                </div><!-- .author-info -->
+            </div><!-- .author-box -->
+            <nav class="post-navigation">
+                <h2 class="screen-reader-text">Post navigation</h2>
+                
+                
+                <div class="nav-next">
+                    <div class="nav-inside">
+                        
+                        <a href="/2017/10/02/GalaxyNote8/" class="nav-thumb" style="background-image: url(/images/posts/galaxy-note-8-cnet.jpg)"></a>
+                        
+                        <div class="nav-before">Next</div>
+                        <div class="nav-title"><a href="/2017/10/02/GalaxyNote8/">Review: Galaxy Note 8 Review</a></div>
+                        <div class="nav-date">October 2, 2017</div>
+                    </div><!-- .nav-inside -->
+                </div><!-- .nav-next -->
+                
+            </nav><!-- .post-navigation -->
+            
+                <div class="comments-area">
+    <div class="comments-inner">
+        <h2 class="comments-title">Comments</h2>
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus</a>.</noscript>
+    </div><!-- .comments-inner -->
+</div><!-- .comments-area -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'theomegabit';
+    var disqus_developer = 0;
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+</script>
+
+            
+        </main><!-- .site-main -->
+        <aside class="sidebar">
+
+    
+    <section class="widget widget-text">
+        <h2 class="widget-title">About Mike Norris</h2>
+        <p>Professional cyber</p>
+    </section><!-- .widget-text -->
+    
+
+    
+
+    
+    <section class="widget widget-text">
+        <p><a href="http://theomegabit.io" target="_blank"><img src="/images/banner.jpg" alt="Optional Banner Ad" /></a></p>
+    </section><!-- .widget-text-->
+    
+
+    <section class="widget widget-recent-posts">
+        <h2 class="widget-title">Latest Posts</h2>
+        <ul class="recent-posts">
+            
+            <li class="recent-item"><a href="/2017/12/19/pixel2-xl/">Review: Google Pixel 2 XL</a> <span>December 19, 2017</span></li>
+            
+            <li class="recent-item"><a href="/2017/11/07/lgv30/">Review: LG V30</a> <span>November 7, 2017</span></li>
+            
+            <li class="recent-item"><a href="/2017/10/02/GalaxyNote8/">Review: Galaxy Note 8 Review</a> <span>October 2, 2017</span></li>
+            
+            <li class="recent-item"><a href="/2017/08/25/ubiquiti-unifi/">Review: Ubiquiti Unifi</a> <span>August 25, 2017</span></li>
+            
+        </ul><!-- .recent-posts -->
+    </section><!-- .widget-recent-posts -->
+
+    <!--Create a sorted array of tags-->
+    
+    
+    <section class="widget widget-tags">
+        <h2 class="widget-title">Tags</h2>
+        <div class="tagcloud">
+            
+            <a href="/tags/#accesspoint">accesspoint</a>
+            
+            <a href="/tags/#android">android</a>
+            
+            <a href="/tags/#galaxynote">galaxynote</a>
+            
+            <a href="/tags/#google">google</a>
+            
+            <a href="/tags/#lg">lg</a>
+            
+            <a href="/tags/#networking">networking</a>
+            
+            <a href="/tags/#pixel2xl">pixel2xl</a>
+            
+            <a href="/tags/#review">review</a>
+            
+            <a href="/tags/#samsung">samsung</a>
+            
+            <a href="/tags/#ubiquiti">ubiquiti</a>
+            
+            <a href="/tags/#unfi">unfi</a>
+            
+            <a href="/tags/#v30">v30</a>
+            
+            <a href="/tags/#wifi">wifi</a>
+            
+            <a href="/tags/#wireless">wireless</a>
+            
+        </div><!-- .tagcloud -->
+    </section><!-- .widget -->
+
+</aside><!-- .sidebar -->
+
+    </div><!-- .inner -->
+</div><!-- .site-content -->
+
+    <footer class="site-footer">
+    <div class="inner">
+        <div class="social-links">
+            
+            <a href="https://twitter.com/theomegabit" class="fa-twitter square fill-horizontal"><span class="screen-reader-text">Twitter</span></a>
+            
+            
+            <a href="https://www.facebook.com/theomegabit" class="fa-facebook square fill-horizontal"><span class="screen-reader-text">Facebook</span></a>
+            
+            
+            <a href="https://plus.google.com/+106163387753059187922" class="fa-google-plus square fill-horizontal"><span class="screen-reader-text">Google+</span></a>
+            
+            
+            <a href="https://github.com/theomegabit" class="fa-github-alt square fill-horizontal"><span class="screen-reader-text">GitHub</span></a>
+            
+            
+            
+            
+            
+            <a href="http://instagram.com/theomegabit" class="fa-instagram square fill-horizontal"><span class="screen-reader-text">Instagram</span></a>
+            
+            
+            
+            <a href="https://www.linkedin.com/in/MikePNorris" class="fa-linkedin square fill-horizontal"><span class="screen-reader-text">LinkedIn</span></a>
+            
+            
+            <a class="fa-feed square fill-horizontal" href="/feed.xml"><span class="screen-reader-text">RSS</span></a>
+        </div><!-- .social-links -->
+        <div class="site-info">
+            &copy; <a href="/">theOmegabit</a> all rights reserved. <br />Powered by <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>. BlogInn theme by <a target="_blank" href="http://justgoodthemes.com/">JustGoodThemes</a>
+            <a href="#top" id="top-link" class="fa-chevron-up top-link square fill-horizontal"><span class="screen-reader-text">Back to the top</span></a>
+        </div><!-- .site-info -->
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/plugins.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+</body>
+</html>
