@@ -1,0 +1,75 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site title
+title: "theOmegabit"
+
+# A description of your site for social meta tag, search engines, and feed.xml
+description: "Tech, dev, security, and photography."
+
+# Tagline near the site title
+tagline: "Bits and Bytes"
+
+# The subpath of your site, e.g. /blog, for generating urls
+baseurl:
+
+sass:
+  sass_dir: _sass
+
+# The base hostname & protocol of your site for where absolute urls are needed
+url: "http://theomegabit.io"
+
+# Site navigation - each item must have a title and a url.
+navigation:
+- text: Home
+  url: /
+- text: About
+  url: /about/
+- text: Coming Soon
+  url: /coming-soon/
+- text: Archives
+  url: /tags/
+
+# The shortname for your Disqus site to enable comments.
+disqus: theomegabit
+
+# Author information - author info at the bottom of the post
+author_name: "Mike Norris"
+author_bio: "Professional cyber"
+author_url:  "https://theomegabit.io"
+author_location: "U.S."
+author_image: /images/authorimage.png
+
+# Sidebar Add banner
+banner_url: "http://theomegabit.io"
+banner_image: images/banner.jpg
+
+# Sidebar newsletter widget - add your form action url for MailChimp signup form here
+#mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
+
+# Social links in the site footer
+twitter_username: "theomegabit"
+facebook_username: "theomegabit"
+googleplus_username: "+106163387753059187922"
+github_username: "theomegabit"
+#codepen_username: "username"
+#dribbble_uername: "username"
+#medium_username: "@username"
+instagram_username: "theomegabit"
+#pinterest_username: "username"
+linkedin_username: "MikePNorris"
+#weibo_username: "username"
+
+# http://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: '/blog/page:num/'
+plugins: [jekyll-paginate]
+
+permalink: pretty
+markdown: kramdown
+kramdown:
+    auto_ids: false
